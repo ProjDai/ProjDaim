@@ -34,13 +34,13 @@ public class CarService {
       return car;
    }
 
-   public Car findById(Long id) {
-      return CarRepository.get(id);
-   }
+//   public Car findById(Long id) {
+//      return CarRepository.get(id);
+//   }
 
-   public Collection<Car> findAll() {
-      return CarRepository.values();
-   }
+//   public Collection<Car> findAll() {
+//      return CarRepository.values();
+//   }
 
 }
 
