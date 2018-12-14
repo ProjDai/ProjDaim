@@ -16,15 +16,15 @@ import com.example.Carservice.service.CarService;
 public class CarController {
    
    @Autowired
-   CarService employeeSearchService;
+   CarService carSearchService;
 
    @RequestMapping("/employee/find/{id}")
    public Car findById(@PathVariable Long id){
-      return employeeSearchService.findById(id);
+      return carSearchService.findById(id);
    }
    
    @RequestMapping("/employee/findall")
    public Collection<Car> findAll(){
-      return employeeSearchService.findAll();
+      return carSearchService.findAll();
    }
 }
