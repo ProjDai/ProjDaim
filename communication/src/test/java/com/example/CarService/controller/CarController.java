@@ -18,12 +18,12 @@ public class CarController {
    @Autowired
    CarService carSearchService;
 
-   @RequestMapping("/employee/find/{id}")
+   @RequestMapping("/car/find/{id}")
    public Car findById(@PathVariable Long id){
       return carSearchService.findById(id);
    }
    
-   @RequestMapping("/employee/findall")
+   @RequestMapping("/car/findall")
    public Collection<Car> findAll(){
       return carSearchService.findAll();
    }
